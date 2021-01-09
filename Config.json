@@ -1,0 +1,17 @@
+{
+	"PollDelay":
+	{
+		"Type": "System.Int32",
+		"Value": "4500"
+	},
+	"Chance":
+	{
+		"Type": "System.Int32",
+		"Value": "20"
+	},
+	"OutputPath":
+	{
+		"Type": "System.String",
+		"Value": "E:\\Steam\\steamapps\\common\\Left 4 Dead 2\\left4dead2\\cfg\\random.cfg"
+	}
+}

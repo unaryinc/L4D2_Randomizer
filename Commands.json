@@ -1,0 +1,578 @@
+[
+	{
+		"Start": "scripted_user_func drop,${player},${weapon}",
+		"StartText": "I believe you have lost something of yours.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func drop_fire",
+		"StartText": "Bzzzzz......",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func drop_spit",
+		"StartText": "Fallout has settled nearby.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func max_health,${entity},${ivalue}",
+		"StartText": "Some of you feel growing stronger every minute.",
+		"Duration": 3,
+		"Min": 100,
+		"Max": 5000,
+		"Finish": "scripted_user_func max_health,${entity},100",
+		"FinishText": "Well, that was their peak, I guess."
+	},
+	{
+		"Start": "scripted_user_func ammo,${player},${ivalue}",
+		"StartText": "Here, have some ammo.",
+		"Duration": 0,
+		"Min": 50,
+		"Max": 500,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func adrenaline,${player},${ivalue}",
+		"StartText": "Now you feel like you could conquer the world.",
+		"Duration": 0,
+		"Min": 3,
+		"Max": 20,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func ent_fire,infected,kill",
+		"StartText": "Anti-zombie nanomachines have been dispatched.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func god,${entity}",
+		"StartText": "Uh oh. Someone has a god mode now.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func god,${entity}",
+		"FinishText": "And now its gone."
+	},
+	{
+		"Start": "scripted_user_func kill,${player}",
+		"StartText": "Heartattack.",
+		"Duration": 1,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func respawn,${player}",
+		"FinishText": "Just kidding, keep playing."
+	},
+	{
+		"Start": "scripted_user_func defib,${player}",
+		"StartText": "Walking dead among zombies.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func incap,${player}",
+		"StartText": "Somebody has slipped.",
+		"Duration": 1,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func revive,${player}",
+		"FinishText": "And now they managed to get up."
+	},
+	{
+		"Start": "scripted_user_func health,${player},temp",
+		"StartText": "Tiredness could be felt around this place.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func health,${player},perm",
+		"StartText": "Those meds sure do help you out.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func limit,common,${ivalue};scripted_user_func z_spawn,common,${ivalue}",
+		"StartText": "Chimp event, for the funny.",
+		"Duration": 4,
+		"Min": 1,
+		"Max": 200,
+		"Finish": "scripted_user_func limit,common,20",
+		"FinishText": "Monkes are gone now."
+	},
+	{
+		"Start": "scripted_user_func limit,maxspecials,${ivalue};scripted_user_func z_spawn,${zombie},${ivalue}",
+		"StartText": "An eldrich horror has been unveiled.",
+		"Duration": 4,
+		"Min": 1,
+		"Max": 20,
+		"Finish": "scripted_user_func limit,maxspecials,4",
+		"FinishText": "We are safe for now..."
+	},
+	{
+		"Start": "scripted_user_func move,${player}",
+		"StartText": "Quantum entanglement was a mistake",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func particle,inferno_grow",
+		"StartText": "Shiny lights",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "Where did they go?"
+	},
+	{
+		"Start": "scripted_user_func remove,${player},${weapon}",
+		"StartText": "You need to leave that thing behind, I am afraid.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func respawn,${player}",
+		"StartText": "God's miracle.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func revive,${player}",
+		"StartText": "Helping hand of God will always be with you.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func revivecount,${player},${ivalue}",
+		"StartText": "Somebody got infected with something.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 1,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func velocity,${player},0,0,${fvalue}",
+		"StartText": "You have been chosen and taken by God.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 1500,
+		"Finish": "scripted_user_func respawn,${player}",
+		"FinishText": "And now you need to come back to Earth."
+	},
+	{
+		"Start": "scripted_user_func gravity,${player},${fvalue}",
+		"StartText": "You feel lighter then a feather.",
+		"Duration": 0,
+		"Min": 1,
+		"Max": 3,
+		"Finish": "scripted_user_func gravity,${player},1.0",
+		"FinishText": "And now you managed to get some of your weigth back. Weird."
+	},
+	{
+		"Start": "scripted_user_func ignite,${entity}",
+		"StartText": "You really should not be playing with matches.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func extinguish,${entity}",
+		"FinishText": "Otherwise they would just run out"
+	},
+	{
+		"Start": "scripted_user_func upgrade_add,${player},${upgrade}",
+		"StartText": "Your gun feels different.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func upgrade_remove,${player},${upgrade}",
+		"StartText": "Gun have been wiped from pestilence.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func stagger,${entity}",
+		"StartText": "Brainfart.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func survivor,${player}",
+		"StartText": "A wanderer joins in.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func l4d1_survivor,${player}",
+		"StartText": "A man in black appears.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func timescale,${fvalue}",
+		"StartText": "Everything seems so different this way.",
+		"Duration": 2,
+		"Min": 0.2,
+		"Max": 3,
+		"Finish": "scripted_user_func timescale,1.0",
+		"FinishText": "And back to normal we go."
+	},
+	{
+		"Start": "scripted_user_func warp,${player}",
+		"StartText": "Come here! Quick! I got something to show you!",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func warp_here,${player}",
+		"StartText": "I hope you are not going to get stuck in a wall after this.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func weapon,${weapon}",
+		"StartText": "G U N",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func weapon,${item},${ivalue}",
+		"StartText": "Cargo drop.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 1,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func z_spawn,${zombie},${ivalue}",
+		"StartText": "Raid has just begun.",
+		"Duration": 0,
+		"Min": 1,
+		"Max": 5,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func z_spawn,common,${ivalue}",
+		"StartText": "A lot of people are in here, why tho.",
+		"Duration": 0,
+		"Min": 1,
+		"Max": 20,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func bash,disable,${player}",
+		"StartText": "You really need to stop with those hands of yours.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func bash,enable,${player}",
+		"FinishText": "You know what? Nevermind."
+	},
+	{
+		"Start": "scripted_user_func chase,${player}",
+		"StartText": "You are now IT.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func finale,start",
+		"StartText": "Let's activate this thing really quick.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func finale,rescue",
+		"StartText": "Let's speed things up a bit.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func director,stop",
+		"StartText": "Brb.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func director,start",
+		"FinishText": "Okay, I am back, what did I miss?"
+	},
+	{
+		"Start": "scripted_user_func speed,${player},${ivalue}",
+		"StartText": "Weeeeee.",
+		"Duration": 2,
+		"Min": 1,
+		"Max": 3,
+		"Finish": "scripted_user_func speed,${player},1",
+		"FinishText": "Awwwwww :("
+	},
+	{
+		"Start": "scripted_user_func ${explosive},${ivalue}",
+		"StartText": "Be carefull with that.",
+		"Duration": 0,
+		"Min": 1,
+		"Max": 10,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func give,${player},${item}",
+		"StartText": "You found something. For free of charge, for once.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func give,${player},${equipable}",
+		"StartText": "That might come in handy.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func give,${player},${weapon}",
+		"StartText": "You should probably have this instead.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func give,${player},${melee}",
+		"StartText": "You need something more personal for them.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func melee,any",
+		"StartText": "Wow, shiny.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func entity,weapon_ammo_spawn",
+		"StartText": "Its a good thing that there is no ammo in this game.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func spawn_ammo",
+		"StartText": "More ammo for everybody.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func spawn_ammo,${ammomodel}",
+		"StartText": "Ammo, but where?",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func prop,dynamic,${staticmodel},aimed",
+		"StartText": "I dont remember this being here.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "Oh well, must have been my imagination."
+	},
+	{
+		"Start": "scripted_user_func prop,physics,${physmodel}",
+		"StartText": "What?",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "Okay then."
+	},
+	{
+		"Start": "scripted_user_func prop,ragdoll,${ragdoll}",
+		"StartText": "That is a strange looking person.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "scripted_user_func door",
+		"StartText": "Sesame -",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "Open?"
+	},
+	{
+		"Start": "scripted_user_func door,saferoom",
+		"StartText": "That is a fake one, dont believe it.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "See? I told you"
+	},
+	{
+		"Start": "scripted_user_func door,${doormodel}",
+		"StartText": "A portal has appeared.",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "A portal has dissapeared."
+	},
+	{
+		"Start": "scripted_user_func minigun,l4d1",
+		"StartText": "We have summoned a turret",
+		"Duration": 3,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "It got tired and has gone to sleep"
+	},
+	{
+		"Start": "scripted_user_func minigun",
+		"StartText": "A minigun just for you",
+		"Duration": 3,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "Well, now we need to take it because other players need it too."
+	},
+	{
+		"Start": "scripted_user_func alarmcar",
+		"StartText": "!",
+		"Duration": 2,
+		"Min": 0,
+		"Max": 0,
+		"Finish": "scripted_user_func cleanup",
+		"FinishText": "Sorry."
+	},
+	{
+		"Start": "scripted_user_func dummy,${dummymodel}",
+		"StartText": "What an incredible pose.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "sm_plane_temp",
+		"StartText": "Something wicked is comming your way.",
+		"Duration": 0,
+		"Min": 0,
+		"Max": 0,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "sm_giveexprandom ${ivalue}",
+		"StartText": "Some of you might feel slightly smarter for no reason.",
+		"Duration": 0,
+		"Min": 300,
+		"Max": 700,
+		"Finish": null,
+		"FinishText": null
+	},
+	{
+		"Start": "sm_givelvlrandom ${ivalue}",
+		"StartText": "You have managed to relieve some of your worst fears and now there is a reward for you.",
+		"Duration": 0,
+		"Min": 1,
+		"Max": 3,
+		"Finish": null,
+		"FinishText": null
+	}
+]
